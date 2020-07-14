@@ -3,31 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>RGB Test</title>
   </head>
   <body>
     <div class="main">
       <div class="div-flex">
         <div class="div-color">
           <span class="color-name">(R)Vermelho</span>
-          <input class="input-red" type="range" />
-          <input type="text" id="text-red" class="input-text" />
+          <input id="input-red" type="range" min="0" max="255" />
+          <input type="text" id="text-red" class="input-text" disabled />
         </div>
         <div class="div-color">
           <span class="color-name">(G)Verde</span>
-          <input class="input-green" type="range" />
-          <input type="text" id="text-green" class="input-text" />
+          <input id="input-green" type="range" min="0" max="255" />
+          <input type="text" id="text-green" class="input-text" disabled />
         </div>
         <div class="div-color">
           <span class="color-name">(B)Azul</span>
-          <input class="input-blue" type="range" />
-          <input type="text" id="text-blue" class="input-text" />
+          <input id="input-blue" type="range" min="0" max="255" />
+          <input type="text" id="text-blue" class="input-text" disabled />
         </div>
       </div>
       <div class="result-area"></div>
     </div>
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
